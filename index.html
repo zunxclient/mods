@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Zunx PvP HUD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: one centered column, a single download action. */
+:root{
+  --bg:#f3f5fb; --surface:#ffffff; --line:#d5dbec; --fg:#12162b; --mute:#566082; --accent:#4a5cf0; --accent-ink:#ffffff;
+  --f-display:"Chakra Petch",system-ui,sans-serif; --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a0d1c; --surface:#11162b; --line:#262e52; --fg:#eaeefc; --mute:#98a2c9; --accent:#7a8bff; --accent-ink:#0a0d1c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a0d1c; --surface:#11162b; --line:#262e52; --fg:#eaeefc; --mute:#98a2c9; --accent:#7a8bff; --accent-ink:#0a0d1c; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--f-body);padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:0}
+main{max-width:560px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;justify-content:center;gap:20px;padding-block:48px}
+.logo{width:72px;height:72px;border-radius:18px}
+h1{font:700 clamp(40px,9vw,64px)/1.05 var(--f-display);margin:8px 0 0;letter-spacing:-.01em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--accent)}
+p{margin:0;color:var(--mute);font-size:18px;max-width:42ch}
+.btn{align-self:flex-start;margin-top:8px;display:inline-flex;gap:10px;align-items:center;background:var(--accent);color:var(--accent-ink);font:600 17px var(--f-body);text-decoration:none;padding:16px 28px;border-radius:12px}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+.meta{font:500 13px var(--f-mono);color:var(--mute);display:flex;gap:8px 16px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--line);margin-top:8px}
+@media (prefers-reduced-motion:no-preference){.btn{transition:filter .15s}}
+</style>
+
+<main>
+  <img class="logo" src="icon.png" alt="Zunx logo">
+  <h1>Zunx <em>PvP</em> HUD</h1>
+  <p>A PvP HUD mod for Fabric with 70+ modules. Press Right Shift in the game to open its menu.</p>
+  <a class="btn" href="https://github.com/zunxclient/mods/releases" target="_blank" rel="noopener">Download</a>
+  <div class="meta"><span>Minecraft 1.21.11</span><span>Fabric</span><span>Needs Fabric API</span></div>
+</main>
+
+</body></html>
